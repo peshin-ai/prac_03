@@ -1,7 +1,7 @@
 def CheckPass(Min):
     Password = input("Your password is :")
     while len(Password) < Min:
-        print("please enter password again")
+        print("Unavailable pass")
         Password = input("The password must be {0} or more than {0} characters".format(Min))
     return Password
 
