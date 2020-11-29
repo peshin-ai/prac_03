@@ -5,8 +5,8 @@ def Convert(F_degree):
 def main():
     Infile = open("temps_input.txt", "r")
     OutFile = open("temps_output.txt", "w")
-    for i in Infile:
-        C_degree = Convert(float(i))
+    for degree in Infile:
+        C_degree = Convert(float(degree))
         print(C_degree, file=OutFile)
     Infile.close()
     OutFile.close()
